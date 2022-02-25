@@ -1,0 +1,150 @@
+body {
+  font-size: 16px;
+  color: #000;
+  background-color:#fff ;
+  font-family:"Comic Sans Ms","Comic Sans", cursive;
+}
+#menu{
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #dbc7f5;
+  border-radius: 0;
+  border: 2px solid black;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  color: #000;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom:0;
+
+  line-height: .1;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list{
+  margin-top: 0px;
+  margin-bottom:0px;
+  border:1px solid black;
+  border-top: 0;
+}
+#nav-list a{
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border:2px solid black;
+  line-height: .1;
+}
+#nav-list a span{
+  font-size: 1.8em;
+}
+/*end of header*/
+
+/*body tags*/
+article{
+  background-color: #dbc7f5;
+  margin-bottom: 20px;
+  margin-right: -10px;
+  border: 2px solid black;
+}
+#chicken,#beef,#sushi{
+  font-size: 1.5em;
+  text-align:center;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+#cntnt{
+  padding: 15px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.lk{
+  padding: 15px;
+  padding-top: 0;
+}
+.lk span{
+  text-decoration: underline;
+}
+@media(min-width: 992px){
+  #nav-list{
+    visibility: hidden;
+  }
+}
+@media (min-width: 768px){
+  #cntnt{padding-bottom: 15px;}
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      width: 100%;
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+@media (min-width: 1400px){
+  .container{
+    width: 100%;
+  }
+}
+@media(max-width:479px){
+  .navbar-brand h1{
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+}
+.f{
+  padding-right: 25px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 3px solid #000;
+}
